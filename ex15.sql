@@ -1,0 +1,1 @@
+SELECT quest.title, character.name FROM character_quests JOIN quest ON character_quests.quest_id = quest.id JOIN character ON character_quests.character_id = character.id WHERE character_quests.status = 'Started';
